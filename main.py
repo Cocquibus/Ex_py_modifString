@@ -1,0 +1,23 @@
+import random
+phrase = "bonjour à tous   "
+print(len(phrase))
+phrase = phrase.rstrip()
+print(len(phrase))
+print(phrase[len(phrase) -1])
+phrase = phrase.strip("bonjour ")
+print(phrase)
+phrase = phrase.split()
+phrase.insert(0,"Bonjour")
+phrase = " ".join(phrase)
+print(phrase)
+phrase = phrase.strip("à tous")
+print(phrase)
+print(random.randint(0,9))
+
+demandeprenom = input("entrer votre prénom: ")
+print("bienvenue à vous: " + demandeprenom)
+demandeage = input("quel est votre age: ")
+print("vous avez: " + demandeage + " ans")
+demandenom = input("quel est votre nom: ")
+demandenom = demandenom.upper()
+print(demandenom)
